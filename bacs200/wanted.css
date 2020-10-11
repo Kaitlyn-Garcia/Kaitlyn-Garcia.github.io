@@ -1,1 +1,86 @@
+* {
+    background-color: darkred;
+}
 
+header {
+    border: double 20px black;
+    background-color: whitesmoke;
+    margin: .5in;
+    padding: 8px;
+    font-size: 110%;
+    font-family: impact charcoal sans-serif;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    color: black;
+    background-color: whitesmoke;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    background-color: whitesmoke;
+    ;
+}
+
+h3 {
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    background-color: whitesmoke;
+
+}
+
+li {
+    background-color: whitesmoke;
+    text-align: center;
+    text-decoration: inherit
+}
+
+link {
+    background-color: whitesmoke;
+    color: blue
+}
+
+body {
+    background-color: whitesmoke;
+    border: solid 4px black;
+    margin: 1in;
+}
+
+p {
+    margin: .2in;
+    font-size: 70px;
+    text-align: center;
+    background-color: whitesmoke;
+    color: black;
+
+}
+
+img {
+    padding: 41.5px;
+    border: double 10px black;
+    background-color: slategrey
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    image-orientation: center
+}
+
+footer {
+    text-align: center;
+    border: double 15px black;
+    background-color: whitesmoke;
+    margin: .5in;
+    padding: 10px;
+    font-size: 200%;
+    font-family: impact charcoal sans-serif;
+}
