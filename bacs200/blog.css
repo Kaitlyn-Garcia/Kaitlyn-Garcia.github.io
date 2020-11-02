@@ -16,7 +16,9 @@ article {
     padding: 1em;
 }
 
-
+Section {
+    background-color: darkolivegreen;
+}
 
 footer {
     clear: both;
@@ -27,10 +29,11 @@ footer {
 
 iframe {
     align-content: center;
+    width: auto;
     border: double 10px olive;
 }
 
-card {
+.card {
     align-content: center;
     border: 10px olive;
 }
@@ -42,10 +45,6 @@ header {
     height: 120px;
     padding: 0;
 
-}
-
-#more {
-    display: none;
 }
 
 
