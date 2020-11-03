@@ -29,13 +29,13 @@ footer {
 
 iframe {
     align-content: center;
-    width: auto;
     border: double 10px olive;
 }
 
 .card {
     align-content: center;
     border: 10px olive;
+    align-content: space-around
 }
 
 header {
