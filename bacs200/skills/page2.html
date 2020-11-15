@@ -6,56 +6,61 @@
     <title>Tabs</title>
     <link rel="stylesheet" href="skills.css">
 </head>
-<script>
-    function openCity(evt, cityName) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
+<header>
+    <h1>Sloth Activities</h1>
+</header>
 
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
+<body>
+    <script>
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
         }
 
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
+    </script>
 
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Sloth Island')">Sloth Island</button>
+        <button class="tablinks" onclick="openCity(event, 'Sloth Hangout')">Sloth Hangout</button>
+        <button class="tablinks" onclick="openCity(event, 'Sloth Spa')">Sloth Spa</button>
+    </div>
 
-</script>
+    <!-- Tab content -->
+    <div id="Sloth Island" class="tabcontent">
+        <h3>Sloth Island</h3>
+        <p>Sloth Island has many sloths.</p>
+        <img src="https://kids.nationalgeographic.com/content/dam/kidsea/kids-core-objects/animals/5-reasons/5-reasons-sloth.adapt.1900.1.jpg" alt="Sloth Baby" width="450">
+    </div>
 
-<!-- Tab links -->
-<div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Sloth Island')">Sloth Island</button>
-    <button class="tablinks" onclick="openCity(event, 'Sloth Hangout')">Sloth Hangout</button>
-    <button class="tablinks" onclick="openCity(event, 'Sloth Spa')">Sloth Spa</button>
-</div>
+    <div id="Sloth Hangout" class="tabcontent">
+        <h3>Sloth Hangout</h3>
+        <p>Sloth Hangout, also, has sloths.</p>
+        <img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1846,w_3286,x_0,y_44/v1554741731/shape/mentalfloss/539787-istock-531256760.jpg?itok=Wlapb5rS" alt="Sloth Baby" width="450">
+    </div>
 
-<!-- Tab content -->
-<div id="Sloth Island" class="tabcontent">
-    <h3>Sloth Island</h3>
-    <p>Sloth Island has many sloths.</p>
-    <img src="https://kids.nationalgeographic.com/content/dam/kidsea/kids-core-objects/animals/5-reasons/5-reasons-sloth.adapt.1900.1.jpg" alt="Sloth Baby" width="450">
-</div>
-
-<div id="Sloth Hangout" class="tabcontent">
-    <h3>Sloth Hangout</h3>
-    <p>Sloth Hangout, also, has sloths.</p>
-    <img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1846,w_3286,x_0,y_44/v1554741731/shape/mentalfloss/539787-istock-531256760.jpg?itok=Wlapb5rS" alt="Sloth Baby" width="450">
-</div>
-
-<div id="Sloth Spa" class="tabcontent">
-    <h3>Sloth Spa</h3>
-    <p>There are sloths at the Sloth Spa.</p>
-    <img src="https://www.guinnessworldrecords.com/Images/Sloth-header_tcm25-544723.jpg" alt="Sloth Baby" width="450">
-</div>
-
+    <div id="Sloth Spa" class="tabcontent">
+        <h3>Sloth Spa</h3>
+        <p>There are sloths at the Sloth Spa.</p>
+        <img src="https://www.guinnessworldrecords.com/Images/Sloth-header_tcm25-544723.jpg" alt="Sloth Baby" width="450">
+    </div>
+</body>
 <style>
     .footer {
         position: relative;
