@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="skills.css">
+</head>
+<script>
+    function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+</script>
+
+<!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Sloth Island')">Sloth Island</button>
+    <button class="tablinks" onclick="openCity(event, 'Sloth Hangout')">Sloth Hangout</button>
+    <button class="tablinks" onclick="openCity(event, 'Sloth Spa')">Sloth Spa</button>
+</div>
+
+<!-- Tab content -->
+<div id="Sloth Island" class="tabcontent">
+    <h3>Sloth Island</h3>
+    <p>Sloth Island has many sloths.</p>
+    <img src="https://kids.nationalgeographic.com/content/dam/kidsea/kids-core-objects/animals/5-reasons/5-reasons-sloth.adapt.1900.1.jpg" alt="Sloth Baby" width="450">
+</div>
+
+<div id="Sloth Hangout" class="tabcontent">
+    <h3>Sloth Hangout</h3>
+    <p>Sloth Hangout, also, has sloths.</p>
+    <img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1846,w_3286,x_0,y_44/v1554741731/shape/mentalfloss/539787-istock-531256760.jpg?itok=Wlapb5rS" alt="Sloth Baby" width="450">
+</div>
+
+<div id="Sloth Spa" class="tabcontent">
+    <h3>Sloth Spa</h3>
+    <p>There are sloths at the Sloth Spa.</p>
+    <img src="https://www.guinnessworldrecords.com/Images/Sloth-header_tcm25-544723.jpg" alt="Sloth Baby" width="450">
+</div>
+
+<style>
+    .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: gold;
+        color: white;
+        text-align: center;
+    }
+
+</style>
+
+<div class="footer">
+    <p class="my-5 pt-5 text-muted text-center text-small"><a href="#">Back to top</a></p>
+    <p class="my-5 pt-5 text-muted text-center text-small"><a href="https://www.w3schools.com/howto/howto_js_tabs.asp">W3Schools</a></p>
+    <p class="text-center text-small">The Yellow Suitcase Travel Company 2020</p>
+</div>
