@@ -1,9 +1,49 @@
-li {
-  float: left;
+* {
+    background-color: lightgoldenrodyellow
 }
 
-a {
-  display: block;
-  padding: 8px;
-  background-color: #dddddd;
+/* top navigation */
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: darkslategrey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #FFCC00;
+    color: white;
+}
+
+/*headings*/
+h1 {
+    text-align: center;
+    font-kerning: auto;
+    letter-spacing: inherit;
+    color: darkslategray;
+    text-transform: capitalize;
+    text-decoration: underline
+}
+
+h3 {
+    text-align: center;
+    font-kerning: 10px;
+    letter-spacing: inherit;
+    color: darkslategray;
+}
+
+img {
+    align-content: space-around flex-start;
+    border: double 10px darkslategrey;
 }
