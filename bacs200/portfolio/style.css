@@ -46,24 +46,37 @@ h3 {
     font-size: 20px
 }
 
+.pquote {
+    float: right;
+    width: 450px;
+    color: darkslategrey;
+    font-size: 55px;
+    line-height: 0.9;
+    font-style: italic;
+    padding: 5px;
+    margin-top: .01in
+}
+
+
 img {
     border: double 10px darkslategrey;
     word-wrap: normal;
 }
 
 h5 {
-    flex-wrap: wrap;
     letter-spacing: inherit;
     color: black;
-    font-size: 15px;
-    margin-left: 3in
+    font-size: 17px;
+
 }
 
 footer {
     text-align: center;
-    font-size: 8px
+    font-size: 12px
 }
 
 li {
-    list-style: none
+    list-style: none;
+    letter-spacing: inherit;
+    color: black;
 }
